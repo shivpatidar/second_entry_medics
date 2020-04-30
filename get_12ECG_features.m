@@ -82,7 +82,7 @@ d = designfilt('bandpassiir','FilterOrder',6, ...
    
 end
 
-function[feat]=ststats(data,fs,lead)
+function [feat] = ststats(data,fs,lead)
 signal=data(lead,:);
 try
 [y,~,~] = qrs_detect2(signal',0.25,0.6,fs);
